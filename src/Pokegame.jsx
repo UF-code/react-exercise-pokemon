@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Pokedex from './Pokedex'
 
-function Pokegame() {
-    return (
-        <div>
-            <h1>Pokegame</h1>
-        </div>
-    )
+export class Pokegame extends Component {
+    render() {
+        return (
+            <div>
+                <h1>Pokegame</h1>
+                <Pokedex/>
+            </div>
+        )
+    }
 }
 
 export default Pokegame
