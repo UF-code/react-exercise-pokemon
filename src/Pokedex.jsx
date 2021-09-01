@@ -4,9 +4,10 @@ import Pokecard from './Pokecard'
 export class Pokedex extends Component {
     render() {
         return (
-            <div>
-                <h1>Pokedex</h1>
-                <Pokecard />
+            <div className='Pokedex'>
+                {this.props.pokemon.map((p) => (
+                    <Pokecard id={p.id} name={p.name} type={p.type} exp={p.base_experience} />
+                ))}
             </div>
         )
     }
